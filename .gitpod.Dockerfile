@@ -15,5 +15,5 @@ RUN sudo apt-get install -y \
     jq
 
 RUN curl -sO https://cli-assets.heroku.com/install.sh && bash install.sh && rm install.sh
-Run git init
+RUN git init
 RUN sudo rm -rf /var/lib/apt/lists/*
