@@ -49,6 +49,7 @@ RUN mkdir -p /tmp/ && \
     rm -rf /tmp/rar*
 
 # copy the dependencies file to the working directory
+
 COPY requirements.txt .
 
 # install dependencies
@@ -58,4 +59,5 @@ RUN pip install -r requirements.txt
 COPY . .
 
 # command to run on container start
+RUN git init
 CMD [ "bash", "./run" ]
